@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ㅎㅎ 잘 골라바 ~~</title>
+</head>
+<body>
+    <h3>애칭을 선택하세요~~~~~~~</h3><hr>
+<script>
+function d()
+{
+    let h="";
+    
+    if(frm1.hh1.checked==true)
+    h+="공주님이라고 부르기!!-!!\n";
+
+    if(frm1.hh2.checked==true)
+    h+="자기라고 부르기!-!\n";
+
+    if(frm1.hh3.checked==true)
+    h+="여보라고 부르기!-!\n";
+
+    if(frm1.hh4.checked==true)
+    h+="윤지라고 부르기!-!\n";
+
+    if(frm1.hh5.value!="")
+    h+= "ㅋ? 직접입력 될 줄 알앗오? 직접선택따윈 없다. 다시 골라";
+
+    alert(h);
+}
+	</script>
+<form name=frm1>
+    <input type="checkbox" name="hh1" value="공주">공주 &nbsp;
+<input type="checkbox" name="hh2" value="자기">자기 &nbsp;
+<input type="checkbox" name="hh3" value="여보">여보 &nbsp;
+<input type="checkbox" name="hh4" value="윤지">윤지 &nbsp;
+
+직접입력<input type="text" name="hh5">
+<input type="button" onclick="d()" value="애칭 선택">
+</form>
+</body>
+</html>
+
